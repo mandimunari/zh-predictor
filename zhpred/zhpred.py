@@ -3,6 +3,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, recall_score, f1_score
 from xgboost import XGBClassifier
+import pickle
 
 class Classifier:
     def X_y_data(self, df):
@@ -53,6 +54,11 @@ class Classifier:
         prob = model.predict_proba(X_test)
 
         return prob
+
+    def model_save(model):
+        pickle = pickle.dump(model, open("model_pickle/pima.pickle.dat", "wb"))
+
+        return pickle
          
 df = pd.read_csv('../data/processed/data.csv')
 
