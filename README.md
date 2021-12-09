@@ -13,6 +13,8 @@ Para resolver o case GauchaZH, utilizou-se a metodologia CRISP DM, seguindo os s
 
 - data/: diretório de dados. Os dados brutos são salvos em data/raw, e os dados processados são salvos em data/processed 
 
-- zhpred/zhpred: promove o modelo baseado em xgboost
+- notebooks/: diretório onde estão os notebooks de pré processamento dos dados e do modelo xgboost
+
+- zhpred/zhpred: promove o modelo baseado em xgboost implementado em classe e funções
 
 ```
