@@ -1,0 +1,11 @@
+name: zhpred
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.7
+  - jupyterlab
+  - openblas
+  - pip
+  - pip:
+    - -r requirements.txt

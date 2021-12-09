@@ -1,0 +1,13 @@
+pandas
+numpy
+matplotlib
+celery==5.1.1
+redis
+click==7.1.2
+python-dotenv
+sklearn
+seaborn
+xgboost
+shap
+-e .
+
